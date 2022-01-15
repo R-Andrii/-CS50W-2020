@@ -1,0 +1,244 @@
+body {
+	height: 100%;
+	width: auto;
+	min-width: 700px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+	height: 100%;
+	width: auto;
+	font-size: 14px;
+	font-family: arial,sans-serif;
+	color: #202124;
+}
+
+.top-section {
+	display: flex;
+	justify-content: end;
+	padding-top: 20px;
+	padding-bottom : 6px;
+	padding-right: 15px;
+}
+
+.top-section a {
+	text-decoration: none;
+	padding-left: 15px;
+	font: 13px;
+	color: rgba(0,0,0,0.87);
+}
+
+.logo-section {
+	/*width: 100%;*/
+	display: flex;
+	/*justify-content: center;*/
+	margin: 0 auto;
+/*	margin-right: auto;
+	margin-left: auto;*/
+}
+
+.logo {
+	display: flex;
+	/*max-height: 92px;*/
+	margin-top: 150px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 5px;
+}
+
+.logo-text {  /*this class for the image_search page*/ 
+	position: absolute;
+	top: 265px;
+	left: 645px;
+	bottom: 0;color: #4285f4;
+	font: 16px/16px roboto-regular, arial, sans-serif;
+	
+	white-space: nowrap;
+}
+
+.search-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.search-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.search-input {
+	border-radius:25px;
+	border: 0;
+	width: 500px;
+	height: 40px;
+	background-color: white;
+	background-image: url("/home/andrew/CS50/SearchG/home_work/search-icon.png");
+	background-size: 15px 15px;
+	background-position: 15px 13px; 
+	background-repeat: no-repeat;
+	padding: 0 0 0 40px;
+	box-shadow:0 0 4px rgba(0,0,0,0.3);
+	transition: .3s box-shadow;
+}
+
+.search-input:hover {
+	box-shadow:0 0 4px rgba(0,0,0,0.8);
+}
+
+input[type=text]:focus {
+	background-color: white;
+	outline: none;
+	border: none;
+}
+
+.button-section  {
+	display: block;
+	text-align: -webkit-center;
+	height: 70px;
+	padding-top: 18px;
+}
+
+.search-buttom, 
+input[type="submit"] {
+	background-color: #f8f9fa;
+	border: 1px solid #f8f9fa;
+	border-radius: 4px;
+	color: #3c4043;
+	font-family: arial,sans-serif;
+	font-size: 14px;
+	margin: 11px 4px;
+	padding: 0 16px;
+	line-height: 27px;
+	height: 36px;
+	min-width: 54px;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+}
+
+.search-buttom:hover {
+	box-shadow:0 0 2.5px rgba(0,0,0,0.4);
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns
+stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.main {
+	width: 100%;
+	margin-top: 0;
+    }
+}
+
+/*this class for the advanced_search page*/
+.logo-advanced {
+	display: flex;
+	justify-content: left;
+	margin-right: auto;
+	margin-left: 20px;
+	margin-bottom: 5px;
+	width: 74px;
+	height: 24px;
+}
+
+.search-section-advance {
+/*	display: flex;
+	flex-direction: column;
+	align-items: flex-start;*/
+	margin-top: 20px;
+	margin-left: 45px;
+	width: 90%;
+}
+
+.appbar {
+	display: block;
+	color: #d93025;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 0;
+	margin-bottom: 25px;
+}
+
+.horizontal-line {
+	display: block;
+	width: 98%;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.find {
+	display: block;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	font-size: 16px;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	font-size: 13px;
+}
+
+.container input[type=text] {
+    width: 95%;
+    text-align: left;
+	border-radius: 1px;
+	border: 1px solid #d9d9d9;
+	border-top: 1px solid #c0c0c0;
+	font-size: 13px;
+	height: 25px;
+	padding: 1px 8px;
+	resize: vertical;
+}
+
+
+label {
+	padding: 2px 2px 2px 0;
+	display: inline-block;
+}
+
+.col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+}
+
+.col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+}
+
+.buttom-advance-section  {
+	display: block;
+	text-align: -webkit-center;
+	height: 50px;
+	padding-top: 18px;
+}
+
+.search-buttom-advance/*,
+input[type=submit]*/ {
+	background-color: #4d90fe;
+	background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+	border: 1px solid #3079ed;
+	border-radius: 4px;
+	color: white;
+	font-size: 13px;
+	margin: 0;
+	padding: 0 16px;
+	line-height: 27px;
+	height: 36px;
+	min-width: 54px;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+}
+
+
+.search-buttom-advance:hover {
+	box-shadow:0 0 1.5px rgba(0,0,0,0.3);
+}
