@@ -77,7 +77,7 @@ body {
 	width: 500px;
 	height: 40px;
 	background-color: white;
-	background-image: url("/home/andrew/CS50/SearchG/home_work/search-icon.png");
+	background-image: url("https://r-andrii.github.io/search-icon.png");
 	background-size: 15px 15px;
 	background-position: 15px 13px; 
 	background-repeat: no-repeat;
